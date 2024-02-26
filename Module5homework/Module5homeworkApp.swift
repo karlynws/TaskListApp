@@ -11,7 +11,9 @@ import SwiftUI
 struct Module5homeworkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//          let taskStore = TaskStore(tasks: Task.staticTask)
+          var tasks: [Task] = Task.staticTask
+          ContentView(tasks: tasks)
         }
     }
 }
