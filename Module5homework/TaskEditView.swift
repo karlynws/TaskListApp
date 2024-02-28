@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TaskDetailsPage: View {
+struct TaskEditView: View {
 //  @State private var taskTitle = ""
 //  @State private var notes = ""
 //  @State private var isCompleted = Bool()
@@ -25,7 +25,9 @@ struct TaskDetailsPage: View {
       }
         Section {
           TextField("Notes", text: $task.notes, axis: .vertical)
+            .lineLimit(10)
         }
+        
       header: {
           Text("Notes")
       }
@@ -41,5 +43,5 @@ struct TaskDetailsPage: View {
 
 
 #Preview {
-  TaskDetailsPage(task: .constant(Task.staticTask[0]))
+  TaskEditView(task: .constant(Task.staticTask[4]))
 }

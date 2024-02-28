@@ -11,8 +11,8 @@
 		0052D53D2B83DF5A0003EB0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D53C2B83DF5A0003EB0C /* ContentView.swift */; };
 		0052D53F2B83DF5B0003EB0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0052D53E2B83DF5B0003EB0C /* Assets.xcassets */; };
 		0052D5422B83DF5B0003EB0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0052D5412B83DF5B0003EB0C /* Preview Assets.xcassets */; };
-		0052D54B2B83EFE70003EB0C /* TaskDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D54A2B83EFE70003EB0C /* TaskDetailsPage.swift */; };
-		0052D54F2B8518410003EB0C /* AddingNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D54E2B8518410003EB0C /* AddingNewTask.swift */; };
+		0052D54B2B83EFE70003EB0C /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D54A2B83EFE70003EB0C /* TaskEditView.swift */; };
+		0052D54F2B8518410003EB0C /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D54E2B8518410003EB0C /* AddTaskView.swift */; };
 		0052D5522B854C180003EB0C /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D5512B854C180003EB0C /* TaskModel.swift */; };
 		0052D5542B857ABC0003EB0C /* StaticTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D5532B857ABC0003EB0C /* StaticTasks.swift */; };
 		0052D5562B8BC8C10003EB0C /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0052D5552B8BC8C10003EB0C /* TaskStore.swift */; };
@@ -24,8 +24,8 @@
 		0052D53C2B83DF5A0003EB0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0052D53E2B83DF5B0003EB0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0052D5412B83DF5B0003EB0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0052D54A2B83EFE70003EB0C /* TaskDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsPage.swift; sourceTree = "<group>"; };
-		0052D54E2B8518410003EB0C /* AddingNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewTask.swift; sourceTree = "<group>"; };
+		0052D54A2B83EFE70003EB0C /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
+		0052D54E2B8518410003EB0C /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		0052D5512B854C180003EB0C /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		0052D5532B857ABC0003EB0C /* StaticTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTasks.swift; sourceTree = "<group>"; };
 		0052D5552B8BC8C10003EB0C /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 			children = (
 				0052D53A2B83DF5A0003EB0C /* Module5homeworkApp.swift */,
 				0052D53C2B83DF5A0003EB0C /* ContentView.swift */,
-				0052D54A2B83EFE70003EB0C /* TaskDetailsPage.swift */,
-				0052D54E2B8518410003EB0C /* AddingNewTask.swift */,
+				0052D54A2B83EFE70003EB0C /* TaskEditView.swift */,
+				0052D54E2B8518410003EB0C /* AddTaskView.swift */,
 				0052D5502B854BE30003EB0C /* Model */,
 				0052D53E2B83DF5B0003EB0C /* Assets.xcassets */,
 				0052D5402B83DF5B0003EB0C /* Preview Content */,
@@ -162,9 +162,9 @@
 			files = (
 				0052D5542B857ABC0003EB0C /* StaticTasks.swift in Sources */,
 				0052D53D2B83DF5A0003EB0C /* ContentView.swift in Sources */,
-				0052D54B2B83EFE70003EB0C /* TaskDetailsPage.swift in Sources */,
+				0052D54B2B83EFE70003EB0C /* TaskEditView.swift in Sources */,
 				0052D5522B854C180003EB0C /* TaskModel.swift in Sources */,
-				0052D54F2B8518410003EB0C /* AddingNewTask.swift in Sources */,
+				0052D54F2B8518410003EB0C /* AddTaskView.swift in Sources */,
 				0052D53B2B83DF5A0003EB0C /* Module5homeworkApp.swift in Sources */,
 				0052D5562B8BC8C10003EB0C /* TaskStore.swift in Sources */,
 			);

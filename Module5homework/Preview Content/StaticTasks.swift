@@ -15,7 +15,9 @@ extension Task{
       Task(title: "Task 2", isCompleted: true),
       Task(title: "Task 3"),
       Task(title: "Task 4", isCompleted: true),
-      Task(title: "Task 5", notes: "This note will have a lot of notes. so many notes. the notes are amazing. i am so full of notes. you couldn't believe the notes i am full of. this is how that stupid president guy talks. so so stupid. "),
+      Task(title: "Task 5", notes: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi nam mollitia repudiandae debitis explicabo quibusdam consectetur id neque!")
+      
+      
       
     ]
   }

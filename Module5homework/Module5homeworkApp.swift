@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import Combine
+
 
 @main
 struct Module5homeworkApp: App {
     var body: some Scene {
         WindowGroup {
-//          let taskStore = TaskStore(tasks: Task.staticTask)
-          var tasks: [Task] = Task.staticTask
-          ContentView(tasks: tasks)
+          @ObservedObject
+          var taskStore = TaskStore()
+          ContentView().environmentObject(taskStore)
         }
     }
 }

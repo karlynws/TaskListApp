@@ -9,19 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
   @State private var showSheet = false
-  @State var tasks: [Task]
+  @EnvironmentObject var taskStore: TaskStore
   
   var body: some View {
     NavigationStack {
       List {
-        ForEach($tasks){ $task in
+        ForEach(taskStore.tasks.indices, id: \.self) { index in
+          
           NavigationLink {
-            TaskDetailsPage(task: $task)
+            TaskEditView(task: $taskStore.tasks[index])
           } label: {
             HStack {
-              Text(task.title)
+              Text(taskStore.tasks[index].title)
               Spacer()
-              task.isCompleted ?
+              taskStore.tasks[index].isCompleted ?
                 Image(systemName: "checkmark.square")
                   .foregroundStyle(.green) :
                 Image(systemName: "square")
@@ -46,7 +47,7 @@ struct ContentView: View {
       //I feel there's a better way to get the button to be leading. I tried a spacer too.
       .padding(.trailing, 275)
       .sheet(isPresented: $showSheet) {
-        AddingNewTask()
+        AddTaskView()
       }
     }
   }
@@ -54,7 +55,8 @@ struct ContentView: View {
 
 
 #Preview {
-  let tasks = Task.staticTask
-  return ContentView(tasks: tasks)
+  
+  return ContentView()
+    .environmentObject(TaskStore())
 }
 

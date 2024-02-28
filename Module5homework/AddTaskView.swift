@@ -8,10 +8,11 @@
 
 import SwiftUI
 
-struct AddingNewTask: View {
+struct AddTaskView: View {
   @State private var taskTitle = ""
   @State private var notes = ""
-  
+  @Environment(\.dismiss) var dismiss
+  @EnvironmentObject var taskStore: TaskStore
   
   var body: some View {
     
@@ -37,12 +38,15 @@ struct AddingNewTask: View {
       .toolbar {
         ToolbarItem(placement: .topBarTrailing) {
           Button("Add") {
-            // Handle done action
+            taskStore.tasks.append(Task(title: taskTitle))
+            
+            dismiss()
           }
+          .disabled(taskTitle.isEmpty)
         }
         ToolbarItem(placement: .topBarLeading) {
           Button("Cancel") {
-            // Handle done action
+            dismiss()
           }
         }
       }
@@ -51,6 +55,7 @@ struct AddingNewTask: View {
 }
 
 #Preview {
-  AddingNewTask()
+  AddTaskView()
+    .environmentObject(TaskStore())
 }
 
