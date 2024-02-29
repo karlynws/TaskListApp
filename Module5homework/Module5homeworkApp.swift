@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import Combine
+
 
 @main
 struct Module5homeworkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          @ObservedObject
+          var taskStore = TaskStore()
+          ContentView().environmentObject(taskStore)
         }
     }
 }
